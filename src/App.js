@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {
@@ -7,7 +6,8 @@ import {
   Route
 } from 'react-router-dom';
 
-import header from './Components/header'
+import header from './Components/header';
+import footer from './Components/footer';
 
 import about from './Components/about';
 import projects from './Components/projects';
@@ -20,23 +20,21 @@ class App extends Component {
         <div className="App">
         <header/>
           <h1>Welcome Page</h1>
-          {/* <li>
-            <ul>
+          <ul>
+            <li>
               <a id='underline' href='/about'>
                 About Me
             </a>
-            </ul>
-            <ul>
+            </li>
+            <li>
               <a id='underline' href='/projects'>
                 Projects
             </a>
-            </ul>
-          </li> */}
-
-
+            </li>
+          </ul>
           <Route path='/about' component={about} />
           <Route path='/projects' component={projects} />
-          <footer />
+          <footer/>
         </div>
       </Router>
     );
