@@ -8,7 +8,7 @@ class Header extends Component {
             <ul>
                 <li>
                     <a id='underline' href='/about'>
-                        About Me
+                        About
                     </a>
                 </li>
                 <li>
@@ -24,6 +24,11 @@ class Header extends Component {
                 <li>
                     <a id='underline' href='/contact'>
                         Contact
+                    </a>
+                </li>
+                <li>
+                    <a id='underline' href='/goals'>
+                        Goals
                     </a>
                 </li>
             </ul>
