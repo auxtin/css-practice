@@ -25,53 +25,42 @@
 body{
   font-family: 'Source Code Pro', monospace;
 }
-
+/*Header Styling*/
 ul {
   list-style-type: none;
-}
-
-.navigation {
-  list-style: none;
-  background: $secondary;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
   margin: 0;
-  padding-right: 10px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
 
-.sidenav {
-  list-style: none;
-  background: $golden-light;
-  margin: 0;
-  padding-right: 10px;
-  text-align: left;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
-  border-bottom: 1px dashed $golden;
+
+
+li {
+  float: left;
 }
 
-.navigation-link {
-  border-bottom: none;
-  border-bottom: 1px solid $secondary;
+li a {
+  display: block;
   color: white;
-  &:hover {
-    border-bottom: 1px solid white;
-  }
-  &.active {
-    border-bottom: 1px solid white;
-  }
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-.sidenav-link {
-  border-bottom: none;
-  border-bottom: 1px solid $golden-light;
-  color: $primary;
-  &:hover {
-    border-bottom: 1px solid $primary;
-  }
-  &.active {
-    border-bottom: 1px solid $primary;
-  }
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
 }
 
-.navigation-brand {
-  font-weight: bold;
+.Footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
 }

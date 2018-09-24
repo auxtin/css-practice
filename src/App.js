@@ -6,8 +6,8 @@ import {
   Route
 } from 'react-router-dom';
 
-import header from './Components/header';
-import footer from './Components/footer';
+import Header from './Components/header';
+import Footer from './Components/footer';
 
 import about from './Components/about';
 import projects from './Components/projects';
@@ -18,23 +18,12 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-        <header/>
           <h1>Welcome Page</h1>
-          <ul>
-            <li>
-              <a id='underline' href='/about'>
-                About Me
-            </a>
-            </li>
-            <li>
-              <a id='underline' href='/projects'>
-                Projects
-            </a>
-            </li>
-          </ul>
+          <Header />
+
           <Route path='/about' component={about} />
           <Route path='/projects' component={projects} />
-          <footer/>
+          <Footer />
         </div>
       </Router>
     );
