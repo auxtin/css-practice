@@ -18,9 +18,13 @@
 .App-intro {
   font-size: large;
 }
+.Welcome {
+  color: white
+}
 
 body {
   background-image: url("cs.jpg");
+  background-size: cover;
 }
 
 
