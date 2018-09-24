@@ -18,8 +18,8 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <h1 className='Welcome'>Welcome Page</h1>
-          <Header />
+          <h1 className='Welcome'>Austin Leonardo</h1>
+          <Header/>
           <Route path='/about' component={about} />
           <Route path='/projects' component={projects} />
           <Footer />
