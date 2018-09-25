@@ -16,19 +16,24 @@ class Header extends Component {
                         Projects
                     </a>
                 </li>
-                <li>
+                {/* <li>
                     <a id='underline' href='/coursework'>
                         Coursework
+                    </a>
+                </li> */}
+                <li>
+                    <a id='underline' href='/goals'>
+                        Goals
+                    </a>
+                </li>
+                <li>
+                    <a id='underline' href='/resume'>
+                        Resume
                     </a>
                 </li>
                 <li>
                     <a id='underline' href='/contact'>
                         Contact
-                    </a>
-                </li>
-                <li>
-                    <a id='underline' href='/goals'>
-                        Goals
                     </a>
                 </li>
             </ul>

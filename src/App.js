@@ -8,6 +8,7 @@ import {
 
 import Header from './Components/header';
 import Footer from './Components/footer';
+import Landing from './Components/Landing';
 
 import about from './Components/about';
 import projects from './Components/projects';
@@ -18,10 +19,12 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <h1 className='Welcome'>Austin Leonardo</h1>
           <Header/>
-          <Route path='/about' component={about} />
-          <Route path='/projects' component={projects} />
+          <Landing/>
+          <hr className='style-eight'></hr>
+
+          {/* <Route path='/about' component={about} />
+          <Route path='/projects' component={projects} /> */}
           <Footer />
         </div>
       </Router>
