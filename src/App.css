@@ -36,7 +36,10 @@ body {
   background-position:  righ bottom;
   background-repeat: no-repeat;
   background-size: 100% auto;
-  /* position: relative; */
+  /* background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
 
 }
 @keyframes flickerAnimation {
@@ -59,11 +62,13 @@ body {
   50%  { opacity:0; }
   100% { opacity:1; }
 }
-background-image {
+.lightning {
    -webkit-animation: flickerAnimation 1s infinite;
    -moz-animation: flickerAnimation 1s infinite;
    -o-animation: flickerAnimation 1s infinite;
     animation: flickerAnimation 1s infinite;
+  width: 74px;
+   height: 74px;
 }
 /* body{
   /* hr tag */
