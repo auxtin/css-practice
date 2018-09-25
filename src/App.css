@@ -22,7 +22,7 @@
   color: whitesmoke;
   font-size: 75px;
   text-align: center;
-  padding: 3.5em  0 2em 0;
+  padding: 1.5em  0 2em 0;
 }
 
 body .App {
@@ -33,13 +33,13 @@ body .App {
 body {
   background-image: url("./Assets/lightbulb.jpg");
   height: 500px;
-  background-position:  righ bottom;
+  /* background-position:  righ bottom;
   background-repeat: no-repeat;
-  background-size: 100% auto;
-  /* background-attachment: fixed;
+  background-size: 100% auto; */
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; */
+  background-size: cover;
 
 }
 @keyframes flickerAnimation {
@@ -69,6 +69,23 @@ body {
     animation: flickerAnimation 1s infinite;
   width: 74px;
    height: 74px;
+}
+
+.subtitle {
+  color: whitesmoke;
+}
+
+.math{
+  margin-top: -37px;
+  margin-bottom: 0rem;
+  margin-left: -28rem;
+  margin-right: -56rem;
+}
+.comp{
+  margin-top: -23px;
+  margin-bottom: 0rem;
+  margin-left: -79rem;
+  margin-right: -52rem;
 }
 /* body{
   /* hr tag */
