@@ -24,8 +24,9 @@
   text-align: center;
   padding: 1.5em  0 2em 0;
 }
-section #about {
-  background: #130809
+section#about {
+  background: #0f4995;
+  height: 500px;
 }
 body::after {
   /* Display and position the pseudo-element */

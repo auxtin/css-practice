@@ -20,7 +20,7 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div className="App">
+        <div id='page-wraper' className="App">
           <Header/>
           <Landing/>
           <hr className='style-eight'></hr>
