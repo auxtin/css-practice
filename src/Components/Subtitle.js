@@ -6,6 +6,7 @@ class Subtitle extends Component {
             <div className='subtitle'>
                 <p className='math'>Applied Mathematician</p>
                 <p className='comp'>Computer Scientist</p>
+                <h3 className='praise'>Growing, Tenacious, and Innovative Mindset</h3>
             </div>
         );
     }
