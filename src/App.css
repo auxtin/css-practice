@@ -1,52 +1,23 @@
+/* App Styling */
 .App {
   text-align: center;
   font-family: 'Source Code Pro', monospace;
 
 }
-
 .App-header {
   background-color: #222;
   height: 150px;
   padding: 20px;
   color: white;
 }
-
 .App-title {
   font-size: 1.5em;
 }
-
 .App-intro {
   font-size: large;
 }
-.Welcome {
-  color: whitesmoke;
-  font-size: 75px;
-  text-align: center;
-  padding: 1.5em  0 2em 0;
-}
-section#about {
-  background: #0f4995;
-  height: 500px;
-}
-body::after {
-  /* Display and position the pseudo-element */
-  content: " ";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  
-  /* Move the pseudo-element back away from the camera,
-   * then scale it back up to fill the viewport.
-   * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
-  transform: translateZ(-1px) scale(1.5);
-  /* Force the background image to fill the whole element. */
-  background-size: 100%;
-  /* Keep the image from overlapping sibling elements. */ 
-  z-index: -1;
-}
 
+/* Body Styling */
 body{
   overflow-x: hidden;
 }
@@ -69,8 +40,109 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
 }
+body::after {
+  /* Display and position the pseudo-element */
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* Move the pseudo-element back away from the camera,
+   * then scale it back up to fill the viewport.
+   * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+  transform: translateZ(-1px) scale(1.5);
+  /* Force the background image to fill the whole element. */
+  background-size: 100%;
+  /* Keep the image from overlapping sibling elements. */ 
+  z-index: -1;
+}
+
+/*Header Styling*/
+.header {
+  text-align: center;
+}
+.header ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  margin: 0 auto;
+  text-align: center;
+  padding: 0;
+  overflow: hidden;
+  background-color: #0c031c;
+  opacity: .5;
+}
+.header li {
+  float: center;
+}
+ .header li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.header li a:hover {
+  background-color: #111;
+}
+
+/* Welcome Styling */
+.Welcome {
+  color: whitesmoke;
+  font-size: 75px;
+  text-align: center;
+  padding: 1.5em  0 2em 0;
+}
+
+/* hr styling */
+hr.style-eight {
+  overflow: visible; /* For IE */
+  margin-top: -9em;
+  padding: 0;
+  border: none;
+  border-top: medium double whitesmoke;
+  color: whitesmoke;
+  text-align: center;
+}
+hr.style-eight:before {
+left: -1px;
+}
+hr.style-eight:after {
+  content: "§";
+  display: inline-block;
+  position: relative;
+  top: -0.7em;
+  font-size: 20px;
+  padding: 0 0.25em;
+  background: #130809;
+}
+
+/* Subtitle Styling */
+.subtitle {
+  color: whitesmoke;
+}
+.math{
+  margin-top: -37px;
+  margin-bottom: 0rem;
+  margin-left: -28rem;
+  margin-right: -56rem;
+}
+.comp{
+  margin-top: -23px;
+  margin-bottom: 0rem;
+  margin-left: -79rem;
+  margin-right: -52rem;
+}
+
+/* Section About Styling  */
+section#about {
+  background: #0f4995;
+  height: 500px;
+}
+
+/* Animation for Lightning */
 @keyframes flickerAnimation {
   0%   { opacity:1; }
   50%  { opacity:0; }
@@ -100,81 +172,8 @@ body {
    height: 74px;
 }
 
-.subtitle {
-  color: whitesmoke;
-}
 
-.math{
-  margin-top: -37px;
-  margin-bottom: 0rem;
-  margin-left: -28rem;
-  margin-right: -56rem;
-}
-.comp{
-  margin-top: -23px;
-  margin-bottom: 0rem;
-  margin-left: -79rem;
-  margin-right: -52rem;
-}
-/* body{
-  /* hr tag */
-  hr.style-eight {
-    
-    overflow: visible; /* For IE */
-    margin-top: -9em;
-    padding: 0;
-    border: none;
-    border-top: medium double whitesmoke;
-    color: whitesmoke;
-    text-align: center;
-}
-hr.style-eight:before {
-  left: -1px;
-}
-hr.style-eight:after {
-    content: "§";
-    display: inline-block;
-    position: relative;
-    top: -0.7em;
-    font-size: 20px;
-    padding: 0 0.25em;
-    background: #130809;
-}
-/*Header Styling*/
-
-.header {
-  text-align: center;
-}
-.header ul {
-  list-style-type: none;
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  margin: 0 auto;
-  text-align: center;
-  padding: 0;
-  overflow: hidden;
-  background-color: #0c031c;
-  opacity: .5;
-
-}
-
-.header li {
-  float: center;
-}
-
- .header li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-.header li a:hover {
-  background-color: #111;
-}
-
+Footer Styling
 .footer {
   position: fixed;
   left: 0;
